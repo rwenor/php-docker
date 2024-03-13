@@ -19,6 +19,6 @@ class MyTest extends TestCase
   {
     $app = new App();
 
-    self::assertEquals("Hello World!", $app->sayHello());
+    self::assertSame("Hello World!", $app->sayHello());
   }
 }
