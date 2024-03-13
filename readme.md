@@ -16,6 +16,8 @@ https://thephp.website/en/issue/php-docker-quick-setup/
 
 ## Test
 > dcr phpunit
+or
+> dcr phpunit --testdox
 
 ## Run
 > doc up fpm nginx
