@@ -1,17 +1,35 @@
 
 https://thephp.website/en/issue/php-docker-quick-setup/
 
+# Konvensjon
+">": Kjøtrs
+"f>": Når prosjektet lages
+
 
 # Settup
 
 > alias doc='docker-compose'
 > alias dcr='docker-compose run'
 
+## Install PHPUnit
+> dcr composer require --dev phpunit/phpunit
+
+## Test
+> dcr phpunit
+
+## Run
+> doc up fpm nginx
+or
+> doc up -d fpm nginx
+Autoloader (???)
+> dcr composer -- dump
+
+http://localhost:8088/
+
 
 ## Envirement
-> touch docker-compose.yml
-> mkdir -p src/ tests/ bin/ .conf/nginx/ var/
-
+f> touch docker-compose.yml
+f> mkdir -p src/ tests/ bin/ .conf/nginx/ var/
 
 ## Install PHPUnit
 > dcr composer require --dev phpunit/phpunit
@@ -22,28 +40,27 @@ Or
 > dcr phpunit --version
 
 ## PHPUnit setup
-> dcr phpunit  --generate-configuration
+f> dcr phpunit  --generate-configuration
 
 ## PHPUnit test
-> touch tests/MyTest.php
-
+f> touch tests/MyTest.php
 Coding...
-> dcr phpunit
 
+## Test
+> dcr phpunit
 Fail... (Fix later...)
 
 ## Web Server Set Up
 > doc up -d fpm 
 
-> touch .conf/nginx/site.conf
+f> touch .conf/nginx/site.conf
 
 > doc up -d fpm nginx
 
 ## The site
-> mkdir app app/public
-> touch app/public/index.php
+f> touch public/index.php
 
-http://localhost:8080/
+http://localhost:8088/
 
 ## Don't forget the autoloader
 > dcr composer -- dump

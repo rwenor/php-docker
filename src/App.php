@@ -1,14 +1,11 @@
-# src/App.php
-<?php
-
+<?php 
 declare(strict_types=1);
-
 namespace ThePHPWebsite;
 
 class App
 {
-  public function sayHello(): void
+  public function sayHello(): string
   {
-    echo 'Hello!';
+    return 'Hello World!';
   }
 }

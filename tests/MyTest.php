@@ -1,8 +1,8 @@
 <?php
-
 declare(strict_types=1);
 
 use PHPUnit\Framework\TestCase;
+use ThePHPWebsite\App;
 
 class MyTest extends TestCase
 {
@@ -13,5 +13,12 @@ class MyTest extends TestCase
   public function testMyTestPases(): void
   {
     self::assertFalse(false);
+  }
+
+  public function testMyApp(): void
+  {
+    $app = new App();
+
+    self::assertSame($app->sayHello(), "Hello World!");
   }
 }

@@ -33,7 +33,7 @@ services:
   nginx:
     image: nginx:1.17.8-alpine
     ports:
-      - 8080:80
+      - 8088:80
     volumes:
       - .:/app
       - ./var/log/nginx:/var/log/nginx
