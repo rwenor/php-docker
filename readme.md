@@ -11,6 +11,9 @@ https://thephp.website/en/issue/php-docker-quick-setup/
 > alias doc='docker-compose'
 > alias dcr='docker-compose run'
 
+Legg linjene i ~/.bash_profile, ~/.zshrc 
+
+
 ## Install PHPUnit
 > dcr composer require --dev phpunit/phpunit
 

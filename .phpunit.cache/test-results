@@ -1,1 +1,1 @@
-{"version":1,"defects":{"MyTest::testMyTest":3,"MyTest::testMyTestFails":3,"MyTest::testMyTestPases":5,"MyTest::testMyApp":3},"times":{"MyTest::testMyTest":0.036,"MyTest::testMyTestFails":0.013,"MyTest::testMyTestPases":0.001,"MyTest::testMyApp":0.001}}
+{"version":1,"defects":{"MyTest::testMyTest":3,"MyTest::testMyTestFails":3,"MyTest::testMyTestPases":5,"MyTest::testMyApp":3},"times":{"MyTest::testMyTest":0.036,"MyTest::testMyTestFails":0.003,"MyTest::testMyTestPases":0.001,"MyTest::testMyApp":0.011}}
